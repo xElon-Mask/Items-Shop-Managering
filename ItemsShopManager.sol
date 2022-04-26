@@ -11,4 +11,9 @@ contract ItemsShopManager {
     }
 
     Item[] public items;
+
+    function addItem(string memory _name, uint _price, uint _units) public {
+        Item memory item = Item(_name, _price, _units);
+        items.push(item);
+    }
 }
