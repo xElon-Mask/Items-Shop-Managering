@@ -21,5 +21,7 @@ contract ItemsShopManager {
         items.pop();
     }
 
-    
+    function totalItem() public view returns(uint) {
+        return items.length;
+    }
 }
