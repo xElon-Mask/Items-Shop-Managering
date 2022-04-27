@@ -16,4 +16,10 @@ contract ItemsShopManager {
         Item memory item = Item(_name, _price, _units);
         items.push(item);
     }
+
+    function deleteItem() public {
+        items.pop();
+    }
+
+    
 }
