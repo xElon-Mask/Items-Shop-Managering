@@ -29,4 +29,11 @@ contract ItemsShopManager {
         return items[_id].name;
     }
 
+    function setItem(uint _id, uint _price, string memory _name, uint _units) public returns(bool) {
+        items[_id].price = _price;
+        items[_id].name = _name;
+        items[_id].units = _units;
+        return true;
+    }
+
 }
