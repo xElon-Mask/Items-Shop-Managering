@@ -36,4 +36,11 @@ contract ItemsShopManager {
         return true;
     }
 
+    function deleteXItem(uint _id) public {
+        for (uint i = _id; i < items.length - 1; i ++) {
+            items[i] = items[i + 1];
+        }
+        items.pop();
+    }
+
 }
