@@ -24,4 +24,9 @@ contract ItemsShopManager {
     function totalItem() public view returns(uint) {
         return items.length;
     }
+
+    function getItem(uint _id) public view returns(string memory) {
+        return items[_id].name;
+    }
+
 }
